@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet'>
+
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script.js" defer></script>
+
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+        <title>Google Maps</title>
+    </head>
+
+    <body>
+        <div id='map'></div>
+        <div class="layers" style="display: none;">
+            <div class="layer current-layer" onclick="showLayers()">
+                <div class="layer-text">
+                    <i class="fas fa-layer-group"></i>
+                    <span>&nbsp;Layers</span>
+                </div>
+            </div>
+
+            <div class="other-layers">
+                <div class="layer" onclick="setLayer(this)">
+                    <div class="layer-text"></div>
+                </div>
+
+                <div class="layer" onclick="setLayer(this)">
+                    <div class="layer-text"></div>
+                </div>
+
+                <div class="layer" onclick="setLayer(this)">
+                    <div class="layer-text"></div>
+                </div>
+
+                <div class="layer" onclick="setLayer(this)">
+                    <div class="layer-text"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
